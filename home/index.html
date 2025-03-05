@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Lazaro - Personal Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="welcome-page">
+        <h1>Welcome to My Personal Profile</h1>
+        <button onclick="enterSite()">Enter Site</button>
+    </div>
+
+    <div class="main-content hidden">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#connect">Connect With Me</a></li>
+                <li><a href="#hobbies">Hobbies & Goals</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <div class="grid-container">
+            <div class="item1" id="about">
+                <h1>Personal Profile Web Page</h1>
+            </div>
+            <div class="item2" id="connect">
+                <h2>Connect With Me</h2>
+                <p>You can find me on <a href="https://www.linkedin.com/in/luis-lazaro-b626a8286/" target="_blank">LinkedIn</a>.</p>
+            </div>
+            <div class="item3">
+                <h2>About Me</h2>
+                <p>I am Luis Lorenzo D. Lazaro.</p>
+                <p>I am currently enrolled at Asia Pacific College in the course BSCS-SF231. I live in Marikina City. Fun Fact about me is I have 5 dogs that are all girls.</p>
+                <h3>Education / Achievements</h3>
+                <p>I have graduated preschool from Integrated School for Young Childern (ISYC).</p>
+                <p>I have graduated elementary level from Marist School.</p>
+                <p>I have graduated senior high from Marikina Science High School.</p>
+                <h3>IT Experience</h3>
+                <ul>
+                    <li>Contributed to a working website and app for a school project here in APC, the website and application was named Rams Pawtners.</li>
+                    <li>Completed a course in Code Combat.</li>
+                </ul>
+            </div>
+            <div class="item4" id="hobbies">
+                <h3>Hobbies and Goals</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hobbies & Interests</th>
+                            <th>Goals in Life / Dream</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Playing basketball</td>
+                            <td>To finish college</td>
+                        </tr>
+                        <tr>
+                            <td>Playing video games</td>
+                            <td>To give back to my parents for their sacrifices</td>
+                        </tr>
+                        <tr>
+                            <td>Listening to music</td>
+                            <td>To be a successful professional in my chosen field</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="item5" id="gallery">
+                <h3>Picture Gallery</h3>
+                <div class="gallery">
+                    <img src="https://scontent.fmnl31-1.fna.fbcdn.net/v/t39.30808-6/413975020_10231667611574872_3556700091512088654_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hPH0AvKpVcUQ7kNvgERjfzl&_nc_zt=23&_nc_ht=scontent.fmnl31-1.fna&_nc_gid=AzOk7K7TqsMmbCwS8LPpkxR&oh=00_AYAM4FwV-4Ujq41b8dYVowwYglevGaBH2sDNZuyTdWnK8A&oe=674DDF5B" 
+                         alt="Profile Picture 1">
+                    <img src="https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/410973187_10230642017695323_1066721445582350873_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Kan7nDK5irUQ7kNvgG6btLk&_nc_zt=23&_nc_ht=scontent-hkg1-2.xx&_nc_gid=Af3koiY5cEay9PfPoY0awJr&oh=00_AYBAySA3uQ9vRvE4asic-1AKV99wZXlBIBs4wEFBNMnjqA&oe=674DE157" 
+                         alt="Profile Picture 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function enterSite() {
+            document.querySelector('.welcome-page').style.display = 'none';
+            document.querySelector('.main-content').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
