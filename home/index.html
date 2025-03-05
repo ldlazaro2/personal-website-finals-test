@@ -9,12 +9,14 @@
 </head>
 <body>
 
+    <!-- Welcome Page -->
     <div class="welcome-page">
         <h1>Welcome to My Personal Profile</h1>
         <button onclick="enterSite()">Enter Site</button>
     </div>
 
-    <div class="main-content hidden">
+    <!-- Main Content -->
+    <div class="main-content">
         <nav class="navbar">
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -37,7 +39,7 @@
                 <p>I am Luis Lorenzo D. Lazaro.</p>
                 <p>I am currently enrolled at Asia Pacific College in the course BSCS-SF231. I live in Marikina City. Fun Fact about me is I have 5 dogs that are all girls.</p>
                 <h3>Education / Achievements</h3>
-                <p>I have graduated preschool from Integrated School for Young Childern (ISYC).</p>
+                <p>I have graduated preschool from Integrated School for Young Children (ISYC).</p>
                 <p>I have graduated elementary level from Marist School.</p>
                 <p>I have graduated senior high from Marikina Science High School.</p>
                 <h3>IT Experience</h3>
@@ -73,9 +75,7 @@
             </div>
             <div class="item5" id="gallery">
                 <h3>Picture Gallery</h3>
-                <div class="gallery">
-
-                </div>
+                <div class="gallery"></div>
             </div>
         </div>
     </div>
@@ -83,8 +83,10 @@
     <script>
         function enterSite() {
             document.querySelector('.welcome-page').style.display = 'none';
-            document.querySelector('.main-content').classList.remove('hidden');
+            let mainContent = document.querySelector('.main-content');
+            mainContent.style.display = 'block';
         }
     </script>
+
 </body>
 </html>
